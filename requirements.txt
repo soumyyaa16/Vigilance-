@@ -3,3 +3,6 @@ pymongo
 requests
 google-generativeai
 python-dotenv
+scikit-learn
+numpy
+gunicorn
