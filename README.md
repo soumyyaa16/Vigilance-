@@ -1,13 +1,13 @@
 # VigilanceAI
 ### Real-time pharmacovigilance signal detection over live FDA adverse event data.
 
-**[Live Demo →](https://vigilance-ai-dmsr.onrender.com)** &nbsp;|&nbsp;
+**[Live Demo →](https://vigilance-ai-dmsr.onrender.com)** &nbsp; &nbsp;
 
 ---
 
 ## The Problem
 
-Every year, drugs that passed clinical trials cause unexpected harm at population scale — *after* approval. The FDA collects millions of adverse event reports in FAERS, but no individual can read 20 million records. Pharma companies pay **$500k+/year** for software that does this manually.
+Every year, drugs that passed clinical trials cause unexpected harm at population scale *after* approval. The FDA collects millions of adverse event reports in FAERS, but no individual can read 20 million records. Pharma companies pay **$500k+/year** for software that does this manually.
 
 The signals exist. They're just buried.
 
@@ -18,7 +18,7 @@ The signals exist. They're just buried.
 A user types a drug name. The system:
 
 1. **Fetches** up to 500 real adverse event reports live from the FDA OpenFDA API
-2. **Calculates** Proportional Reporting Ratio (PRR) — the exact statistical method used by the FDA, WHO, and European Medicines Agency
+2. **Calculates** Proportional Reporting Ratio (PRR) the exact statistical method used by the FDA, WHO, and European Medicines Agency
 3. **Runs** Isolation Forest ML anomaly detection on quarterly reporting trends to flag temporal spikes
 4. **Generates** a clinical signal assessment using Gemini 1.5 Flash
 5. **Returns** a structured intelligence report with flagged signals, evidence records, and recommended regulatory action
@@ -78,7 +78,7 @@ Structured Signal Report + Evidence Explorer
 | Backend | Python, Flask |
 | Database | MongoDB Atlas |
 | Signal Detection | NumPy, scikit-learn (Isolation Forest) |
-| AI Interpretation | Google Gemini 1.5 Flash |
+| AI Interpretation | Google Gemini 2.5 Flash |
 | Data Source | FDA OpenFDA FAERS API |
 | Frontend | HTML, CSS, JavaScript, Chart.js |
 | Deployment | Render |
